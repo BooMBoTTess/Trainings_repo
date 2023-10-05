@@ -19,5 +19,5 @@ def Solution(matrix):
 
 
 if __name__ == '__main__':
-    f = open('../input.txt', 'r')
+    f = open('../test.txt', 'r')
     print(Solution(f.read()))

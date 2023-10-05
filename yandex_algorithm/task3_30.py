@@ -1,8 +1,17 @@
 def dfs(graph, visited, now):
     visited[now] = True
-    for neibor in graph[now]:
-        if not visited[neibor]:
-            dfs(graph, visited, neibor)
+    tmp = 0
+    stack = [1]
+    comp = []
+    while stack:
+        tmp = stack.pop()
+        if not visited[tmp]:
+            visited[tmp] = True
+            stack.extend(graph[tmp])
+            comp.append(tmp)
+    print(comp)
+    return 0
+
 
 def Solution(matrix):
     matrix = matrix.split('\n')
@@ -18,17 +27,14 @@ def Solution(matrix):
         graph[matrix[i][0]].append(matrix[i][1])
         graph[matrix[i][1]].append(matrix[i][0])
 
-    visited = [0] * (matrix[0][0] + 1)
+    visited = [False] * (matrix[0][0] + 1)
+
     dfs(graph, visited, 1)
 
-    answer = []
-    for i in range(len(visited)):
-        if visited[i]:
-            answer.append(i)
-    return f'{sum(visited)}\n{" ".join(map(str, answer))}'
 
 
 
 if __name__ == '__main__':
-    f = open('../input.txt', 'r')
-    print(Solution(f.read()))
+
+    f = open('../test.txt', 'r')
+    print(Solution(f.read().rstrip('\n')))
