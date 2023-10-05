@@ -1,5 +1,4 @@
 def dfs(graph, visited, now):
-    visited[now] = True
     tmp = 0
     stack = [1]
     comp = []
@@ -9,8 +8,8 @@ def dfs(graph, visited, now):
             visited[tmp] = True
             stack.extend(graph[tmp])
             comp.append(tmp)
-    print(comp)
-    return 0
+    return sorted(comp)
+
 
 
 def Solution(matrix):
@@ -29,12 +28,12 @@ def Solution(matrix):
 
     visited = [False] * (matrix[0][0] + 1)
 
-    dfs(graph, visited, 1)
-
+    ans = dfs(graph, visited, 1)
+    return f'{len(ans)}\n{" ".join(map(str, ans))}'
 
 
 
 if __name__ == '__main__':
 
-    f = open('../test.txt', 'r')
+    f = open('input.txt', 'r')
     print(Solution(f.read().rstrip('\n')))
