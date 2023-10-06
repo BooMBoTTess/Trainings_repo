@@ -10,6 +10,7 @@ class message_handler:
 
     def __init__(self):
         self.handlers_list = {cls.handle_detection: cls for cls in message_handler.__subclasses__()}
+        #создается словарь из всех подклассов в котором ключ это строка, а значение это класс.
         self.a = 'factory'
 
     def create_class(self, handler_name: str):
