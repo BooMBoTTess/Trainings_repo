@@ -41,7 +41,7 @@ def Solution(matrix):
     print(comp-1)
     for key, value in comp_list.items():
 
-        fstring += str(key) + '\n' + ' '.join(map(str, value)) + '\n'
+        fstring += str(len(value)) + '\n' + ' '.join(map(str, value)) + '\n'
     return fstring
 
 if __name__ == '__main__':
