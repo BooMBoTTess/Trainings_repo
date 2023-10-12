@@ -1,11 +1,11 @@
 import unittest
-#import yandex_algorithm.task3_30 as main
-import leetcode.task_l_21 as main
+import yandex_algorithm.task3_33v2 as tested_function
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
-        f = open('test.txt', 'r')
-        self.assertEqual(main.Solution(f.read().rstrip('\n')), '4\n1 2 3 4')
+        f = open('09.txt', 'r')
+        self.assertEqual(tested_function.solution(f.read().strip('\n')),
+                         'YES')
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

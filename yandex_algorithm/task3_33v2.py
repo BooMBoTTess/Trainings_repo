@@ -31,11 +31,14 @@ def solution(edges):
 
     visited = [0 for i in range(edges[0][0] + 1)]
     for i in range(1, len(visited)):
-        dfs(graph, visited, 1)
-
+        if visited[i] == 0:
+            flag = dfs(graph, visited, 1)
+            if not flag:
+                return 'NO'
+    return 'YES'
 
 
 
 if __name__ == '__main__':
-    with open('input.txt', 'r') as f:
-        solution(f.read().strip('\n'))
+    with open('../09.txt', 'r') as f:
+        print(solution(f.read().strip('\n')))
