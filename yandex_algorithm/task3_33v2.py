@@ -32,7 +32,7 @@ def solution(edges):
     visited = [0 for i in range(edges[0][0] + 1)]
     for i in range(1, len(visited)):
         if visited[i] == 0:
-            flag = dfs(graph, visited, 1)
+            flag = dfs(graph, visited, i)
             if not flag:
                 return 'NO'
     return 'YES'
