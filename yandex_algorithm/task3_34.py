@@ -31,6 +31,9 @@ def solution(edges):
         if (count_edge[i] == 0) and (visited[i] == 0):
             dfs(graph, visited, i, count_edge, sorted_list)
 
+    for i in range(1, len(visited)):
+        if i == 0:
+            return '-1'
     return ' '.join(map(str, sorted_list))
 
 
