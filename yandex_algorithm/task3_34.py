@@ -32,7 +32,7 @@ def solution(edges):
             dfs(graph, visited, i, count_edge, sorted_list)
 
     for i in range(1, len(visited)):
-        if i == 0:
+        if visited[i] == 0:
             return '-1'
     return ' '.join(map(str, sorted_list))
 
@@ -42,5 +42,5 @@ def solution(edges):
 
 
 if __name__ == '__main__':
-    f = open('input.txt', 'r')
+    f = open('../input.txt', 'r')
     print(solution(f.read().rstrip('\n')))
