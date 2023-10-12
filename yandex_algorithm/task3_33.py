@@ -3,15 +3,14 @@ def dfs(graph, visited, now):
     stack = [now]
     group_student = 1
     while stack:
-        past = tmp
         tmp = stack.pop()
         if visited[tmp] == 0:
             visited[tmp] = group_student
             stack.extend(graph[tmp])
-            group_student = 3 - group_student
-        else:
-            if visited[tmp] == visited[past]:
-                return False
+            for neigh in graph[tmp]:
+                if visited[neigh] == visited[tmp]:
+                    return False
+        group_student = 3 - group_student
     return True
 
 def Solution(matrix):
@@ -38,5 +37,5 @@ def Solution(matrix):
 
 
 if __name__ == '__main__':
-    f = open('input.txt', 'r')
+    f = open('../input.txt', 'r')
     print(Solution(f.read().rstrip('\n')))

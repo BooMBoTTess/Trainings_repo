@@ -1,5 +1,6 @@
 import unittest
-import yandex_algorithm.task3_30 as main
+#import yandex_algorithm.task3_30 as main
+import leetcode.task_l_21 as main
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
