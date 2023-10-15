@@ -1,17 +1,15 @@
 import unittest
-import yandex_algorithm.task3_33v2 as tested_function
+import leetcode.task_e_1512 as tested_function
 
 class MyTestCase(unittest.TestCase):
     def test_case(self):
-        with open(f'tests/1.txt') as f:
-            self.assertEqual(tested_function.solution(f.read().strip('\n')),
-                             'YES')
-        with open(f'tests/2.txt') as f:
-            self.assertEqual(tested_function.solution(f.read().strip('\n')),
-                             'NO')
-        with open(f'tests/3.txt') as f:
-            self.assertEqual(tested_function.solution(f.read().strip('\n')),
-                             'YES')
+        s = tested_function.Solution()
+        self.assertEqual(s.numIdenticalPairs([1, 2, 3, 1, 1, 3]), 4)
+        self.assertEqual(s.numIdenticalPairs([1, 1, 1, 1]), 6)
+        self.assertEqual(s.numIdenticalPairs([1, 2, 3]), 0)
+        self.assertEqual(s.numIdenticalPairs([1]), 0)
+        self.assertEqual(s.numIdenticalPairs([1 for i in range(100)]), 495)
+
 
 
 if __name__ == '__main__':

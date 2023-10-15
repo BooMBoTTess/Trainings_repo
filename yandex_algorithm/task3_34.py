@@ -9,10 +9,6 @@ def dfs(graph, visited, now, count_edge, sorted_list):
             for i in graph[tmp]:
                 count_edge[i] -= 1
 
-
-
-
-
 def solution(edges):
     edges = edges.split('\n')
     for i in range(len(edges)):
@@ -42,5 +38,5 @@ def solution(edges):
 
 
 if __name__ == '__main__':
-    f = open('../input.txt', 'r')
+    f = open('input.txt', 'r')
     print(solution(f.read().rstrip('\n')))
