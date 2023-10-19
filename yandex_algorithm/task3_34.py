@@ -38,5 +38,5 @@ def solution(edges):
 
 
 if __name__ == '__main__':
-    f = open('input.txt', 'r')
+    f = open('../input.txt', 'r')
     print(solution(f.read().rstrip('\n')))
