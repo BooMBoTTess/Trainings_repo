@@ -45,5 +45,5 @@ def Solution(matrix):
     return fstring
 
 if __name__ == '__main__':
-    f = open('../input.txt', 'r')
+    f = open('input.txt', 'r')
     print(Solution(f.read().rstrip('\n')))
