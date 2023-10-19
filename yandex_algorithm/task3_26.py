@@ -1,23 +1,24 @@
-def MatrixToList(matrix: list) -> list:
-    m, n = matrix[0][0], matrix[0][1]
-    arr = [[0]] * max(m, n)
-    kj = 1
-    for i in range(m):
-        kj += 1
-        for j in range(kj, n):
-            print(matrix[i], [j], i, j)
-    return arr
-
-
 def Solution(matrix):
     matrix = matrix.split('\n')
-    matrix2 = []
-    for i in matrix:
-        matrix2.append(i.split(' '))
-    matrix2 = [[int(i) for i in j] for j in matrix2]
-    edge_list = MatrixToList(matrix2)
+    matrix = [elem.split(' ') for elem in matrix]
+    matrix = [list(map(int, elem)) for elem in matrix]
+    index = matrix[0]
+    matrix = matrix[1:]
+
+    dp = [[matrix[0][0]]]
+    for row in range(1, index[1]):
+        dp.append([matrix[row][0]+dp[row-1][0]])
+    for col in range(1, index[0]):
+        dp[0].append(matrix[0][col] + dp[0][col-1])
 
 
+    for row in range(1, index[0]):
+        for col in range(1, index[1]):
+            tmp = min(dp[row-1][col], dp[row][col-1]) + matrix[row][col]
+            dp[row].append(tmp)
+
+
+    return dp[index[0]-1][index[1]-1]
 if __name__ == '__main__':
-    f = open('../test.txt', 'r')
+    f = open('../input.txt', 'r')
     print(Solution(f.read()))
