@@ -6,10 +6,10 @@ def way(dp, index) -> List:
     row, col = (index[0], index[1])
     while (row != 1) or (col != 1):
         if dp[row - 1][col] > dp[row][col - 1]:
-            path.append('D')
+            path.insert(0, 'D')
             row -= 1
         else:
-            path.append('R')
+            path.insert(0, 'R')
             col -= 1
     return path
 
@@ -42,4 +42,4 @@ def Solution(matrix):
 
 if __name__ == '__main__':
     f = open('input.txt', 'r')
-    print(Solution(f.read()))
+    print(Solution(f.read().rstrip('\n')))
