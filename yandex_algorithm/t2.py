@@ -15,7 +15,7 @@ def Solution(s):
                 break
         dp.append(max(tmp))
 
-    return max(dp)+1, dp
+    return max(dp)+1
 
 
 if __name__ == '__main__':
