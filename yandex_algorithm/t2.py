@@ -11,8 +11,6 @@ def Solution(s):
         for prev in range(now):
             if (arr[prev] <= arr[now]) and ((arr[prev] + b) >= arr[now]):
                 tmp.append(dp[prev]+1)
-            if max(tmp) == len(dp):
-                break
         dp.append(max(tmp))
 
     return max(dp)+1
