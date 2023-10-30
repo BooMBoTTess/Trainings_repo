@@ -8,7 +8,6 @@ def Solution(s):
     s = s.split('\n')
     input_str = list(map(int, s[1].split(' ')))
     arr = s[2:]
-    print(arr, input_str)
     tmp = []
     for elem in arr:
         elem = list(map(int, elem.split(' ')))
@@ -16,12 +15,6 @@ def Solution(s):
 
         ans = -1
         print(sol(tmp))
-
-
-
-
-
-    return arr, input_str
 
 
 if __name__ == '__main__':
