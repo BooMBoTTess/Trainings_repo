@@ -6,8 +6,8 @@ def mygcd(a, b):
 
 def Solution(s):
     a, b, c, d = list(map(int, s.split(' ')))
-    m = b * d
-    n = a * d + c * b
+    n = b * d
+    m = a * d + c * b
     i = max(m, n)
     nod = 1
     nod = mygcd(m, n)
