@@ -5,7 +5,7 @@ def mygcd(m, n):
         else:
             n = n % m
     if n == 0:
-        return 1
+        return m
     return n
 
 def Solution(s):
