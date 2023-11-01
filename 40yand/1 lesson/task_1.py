@@ -14,5 +14,9 @@ def quicksort(arr):
 
 if __name__ == '__main__':
     f = open('input.txt', 'r')
-    inp = list(map(int, f.read().rstrip('\n').split(' ')))
-    print(Solution(inp))
+    inp = f.read().rstrip('\n').split('\n')
+    n = int(inp[0])
+    x = int(inp[2])
+    arr = list(map(int, inp[1].split(' ')))
+    out = partition(n, arr, x)
+    print('\n'.join(list(map(str, out))))
