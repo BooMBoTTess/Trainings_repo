@@ -5,7 +5,7 @@ def Solution(rows, cols, arr):
     dp = [[0], []]
     for row in range(1, rows+1):
         for col in range(1, cols+1):
-            if arr[row-1][col] * arr[row][col-1] * arr[row-1][col-1] == 1:
+            if arr[row-1][col] * arr[row][col-1] * arr[row-1][col-1] * arr[row][col] == 1:
                 x = dp[row-1][col-1] + 1
             else:
                 x = 0
@@ -19,7 +19,7 @@ def Solution(rows, cols, arr):
                 max_size = dp[row][col]
 
 
-    return max_size
+    return max_size+1
 
 
 if __name__ == '__main__':
