@@ -36,5 +36,6 @@ def Solution(arr):
 
 if __name__ == '__main__':
     f = open('input.txt', 'r')
+    n = f.readline()
     inp = list(map(int, f.read().rstrip('\n').split(' ')))
-    print(Solution(inp))
+    print(' '.join(list(map(str, Solution(inp)))))

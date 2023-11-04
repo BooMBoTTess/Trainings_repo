@@ -1,13 +1,10 @@
-import taskmergesort as t
+import razmG as t
 import pytest
 import random
 
 
 def test_merge():
-    assert t.merge([2, 5], [1, 2, 9]) == [1, 2, 2, 5, 9]
-    assert t.merge([2, 3, 5], [1, 2]) == [1, 2, 2, 3, 5]
-    assert t.merge([2,3,5], [1, 2, 9]) == [1,2,2,3,5,9]
-    assert t.merge([2, 3], [1, 2]) == [1, 2, 2, 3]
+    assert t.Solution(4,4[[1,1,1,1],[1,1,1,1][1,1,1,1][1,1,1,1]])
 
 def test_random():
     for i in range(10):
