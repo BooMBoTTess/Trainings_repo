@@ -39,11 +39,13 @@ if __name__ == '__main__':
     n = f.readline()
     if int(n) == 0:
         arr1 = []
+        f.readline()
     else:
         arr1 = list(map(int, f.readline().split(' ')))
     m = f.readline()
     if int(m) == 0:
         arr2 = []
+        f.readline()
     else:
         arr2 = list(map(int, f.readline().split(' ')))
     print(' '.join(list(map(str, merge(arr1, arr2)))))
