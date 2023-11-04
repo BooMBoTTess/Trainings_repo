@@ -10,18 +10,18 @@ def make_bucker(arr, phase: int):
 
 def Solution(arr):
     print('Initial array:')
-    print(' '.join(arr))
+    print(', '.join(arr))
     for phase in range(1, len(arr[0])+1):
         bucket = make_bucker(arr, phase)
         arr = []
         counter = 0
         for elem in bucket:
             if elem != []:
-                print(f"Bucket {counter}: {' '.join(elem)}")
+                print(f"Bucket {counter}: {', '.join(elem)}")
                 for i in elem:
                     arr.append(i)
             else:
-                print(f"Bucket {counter}: Empty")
+                print(f"Bucket {counter}: empty")
             counter += 1
     print('**********')
     print('Sorted array:')
