@@ -20,16 +20,31 @@ def is_equal(hash, x_arr, p, from1, from2, slen):
         (hash[from2 + slen - 1] + hash[from1 - 1] * x_arr[slen]) % p
     )
 
+def bin_find(hashed_s, x_arr, p, from1, from2):
+    hashed_s.append(0)
+    L = 0
+    R = len(hashed_s) - from2 + 1
+    X = 0
+    if is_equal(hashed_s, x_arr, p, from1, from2, X) and not is_equal(hashed_s, x_arr, p, from1, from2, X + 1):
+        return 0
+
+    while L < R:
+        X = (R + L) // 2
+        if is_equal(hashed_s, x_arr, p, from1, from2, X) and not is_equal(hashed_s, x_arr, p, from1, from2, X + 1):
+            return X
+        elif is_equal(hashed_s, x_arr, p, from1, from2, X):
+            L = X
+        else:
+            R = X
+
+    return X
+
+
 def max_substring(hashed_s, x_arr, p):
     from1 = 1
     arr = []
     for from2 in range(2, len(strok) + 1):
-        max_len = 0
-        for k in range(len(strok) - from2, -1, -1):
-            slen = k+1
-            if is_equal(hashed_s, x_arr, p, from1, from2, slen) and slen > max_len:
-                max_len = slen
-        arr.append(max_len)
+        arr.append(bin_find(hashed_s, x_arr, p, from1, from2))
     arr.insert(0,0)
     return arr
 
@@ -38,7 +53,7 @@ if __name__ == '__main__':
 
     with open('input.txt', 'r') as f:
         strok = f.readline().rstrip('\n')
-        x = 257
+        x = 33
         p = 10**9 + 7
         hashed_s, x_arr = hash_s(strok, x, p)
         print(' '.join(map(str, max_substring(hashed_s, x_arr, p))))
