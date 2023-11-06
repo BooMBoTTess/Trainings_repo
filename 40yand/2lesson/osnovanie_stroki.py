@@ -28,14 +28,15 @@ def max_substring(hashed_s, x_arr, p):
         if is_equal(hashed_s, x_arr, p, from1, from2, slen):
             return k
         from2 += 1
+    return 0
 
 
 if __name__ == '__main__':
 
     with open('input.txt', 'r') as f:
         strok = f.readline().rstrip('\n')
-        x = 100
-        p = 10**18
+        x = 257
+        p = 10**9 + 7
         hashed_s, x_arr = hash_s(strok, x, p)
         print(len(strok) - max_substring(hashed_s, x_arr, p))
 
