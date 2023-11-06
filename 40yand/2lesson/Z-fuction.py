@@ -41,6 +41,6 @@ if __name__ == '__main__':
         x = 257
         p = 10**9 + 7
         hashed_s, x_arr = hash_s(strok, x, p)
-        print(max_substring(hashed_s, x_arr, p))
+        print(' '.join(map(str, max_substring(hashed_s, x_arr, p))))
 
 
