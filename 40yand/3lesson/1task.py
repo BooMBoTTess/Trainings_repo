@@ -53,4 +53,4 @@ if __name__ == '__main__':
             matrix2.append(list(map(int, row.split(' '))))
         matrix = matrix2
     m_sm = smegn(n,matrix)
-    print(Solution(n, S1, S2, m_sm))
+    print(Solution(n, S1, S2, m_sm)[S2])
