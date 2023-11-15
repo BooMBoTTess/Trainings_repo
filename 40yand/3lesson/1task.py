@@ -9,13 +9,11 @@ def smegn(n, matrix):
 
 
 def add_to_stack(stack, elem, dist, visited):
-    if len(stack) == 0:
-        stack.append(elem)
-        return 1
-    for i in range(len(stack)):
-        if dist[stack[i]] >= dist[elem] and not visited[elem]:
-            stack.insert(i, elem)
-            return 1
+    if len(stack) != 0:
+        for i in range(len(stack)):
+            if dist[stack[i]] >= dist[elem] and not visited[elem]:
+                stack.insert(i, elem)
+                return 1
     if not visited[elem]:
         stack.append(elem)
 
@@ -32,7 +30,7 @@ def Solution(n, S1, S2, matrix):
     dist = [100000 for i in range(n)]
     dist[S1] = 0
     stack = [S1]
-    while visited[S2] == 0:
+    while visited[S2] == 0 and stack != []:
         elem = stack.pop(0)
         visited[elem] = 1
         deich(matrix, elem, dist, stack, visited)
@@ -53,4 +51,8 @@ if __name__ == '__main__':
             matrix2.append(list(map(int, row.split(' '))))
         matrix = matrix2
     m_sm = smegn(n,matrix)
-    print(Solution(n, S1, S2, m_sm)[S2])
+    dist_sol = Solution(n, S1, S2, m_sm)[S2]
+    if dist_sol == 100000:
+        print(-1)
+    else:
+        print(dist_sol)
