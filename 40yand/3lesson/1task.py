@@ -51,7 +51,7 @@ if __name__ == '__main__':
             S1 -= 1
             S2 -= 1
             for row in matrix:
-                matrix2.append(list(map(int, row.split(' '))))
+                matrix2.append(list(map(int, row.rstrip(' ').split(' '))))
             matrix = matrix2
             m_sm = smegn(n,matrix)
             dist_sol = Solution(n, S1, S2, m_sm)[S2]
