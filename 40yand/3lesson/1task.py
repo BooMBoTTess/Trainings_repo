@@ -57,5 +57,5 @@ if __name__ == '__main__':
             dist_sol = Solution(n, S1, S2, m_sm)[S2]
             if dist_sol == 100000:
                 print(-1)
-    else:
-        print(dist_sol)
+            else:
+                print(dist_sol)
