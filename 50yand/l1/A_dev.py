@@ -25,11 +25,11 @@ def Solution(P, V, Q, M):
         return Right_P - Left_P + 1
 
     if Right_P == Left_Q:
-        result += Right_Q - Left_Q
+        result += abs(Right_Q - Left_Q)
     elif Right_P < Left_Q:
-        result += Right_Q - Left_Q + 1
+        result += abs(Right_Q - Left_Q) + 1
     elif Right_P < Q:
-        result += Right_Q - Right_P
+        result += abs(Right_Q - Right_P)
 
 
     return result

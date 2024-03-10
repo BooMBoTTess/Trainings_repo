@@ -23,7 +23,12 @@ def test_partition():
     assert t.Solution(12, 100, 0, 5) == 201
     assert t.Solution(0, 5, 12, 100) == 201
     assert t.Solution(12, 5, 0, 100) == 201
-
+    assert t.Solution(1, 3, 5, 6) == 14
+    assert t.Solution(5, 6, 1, 3) == 14
+    assert t.Solution(-100, 5, 100, 5) == 22
+    assert t.Solution(3, 4, 8, 6) == 16
+    assert t.Solution(8, 6, 3, 4) == 16
+    assert t.Solution(-15, 3, -18, 2) == 9
 
 
 
