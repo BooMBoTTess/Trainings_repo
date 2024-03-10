@@ -3,9 +3,17 @@ def Solution(P, V, Q, M):
     range = P - Q
     if range < 0:
         range *= -1
-    result += V * 2 + 1
-    result += M * 2 + 1
-    result -= 1 - (range - V - M)
+
+    if range == 0:
+        result += max(V, M) * 2 + 1
+    elif range > V + M:
+        result += V * 2 + 1
+        result += M * 2 + 1
+    elif range <= V + M:
+        result += V * 2 + 1
+        result += M * 2 + 1
+        result -= 1 - (range - V - M)
+
     return result
 
 
