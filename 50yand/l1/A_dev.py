@@ -30,6 +30,8 @@ def Solution(P, V, Q, M):
         result += abs(Right_Q - Left_Q) + 1
     elif Right_P < Q:
         result += abs(Right_Q - Right_P)
+    else:
+        result += abs(Right_Q - Right_P)
 
 
     return result

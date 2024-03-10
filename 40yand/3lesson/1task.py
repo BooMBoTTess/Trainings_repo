@@ -53,7 +53,7 @@ if __name__ == '__main__':
             for row in matrix:
                 matrix2.append(list(map(int, row.rstrip(' ').split(' '))))
             matrix = matrix2
-            m_sm = smegn(n,matrix)
+            m_sm = smegn(n,matrix)tr
             dist_sol = Solution(n, S1, S2, m_sm)[S2]
             if dist_sol == 100000:
                 print(-1)

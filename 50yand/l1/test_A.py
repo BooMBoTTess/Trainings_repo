@@ -29,6 +29,7 @@ def test_partition():
     assert t.Solution(3, 4, 8, 6) == 16
     assert t.Solution(8, 6, 3, 4) == 16
     assert t.Solution(-15, 3, -18, 2) == 9
+    assert t.Solution(-1, 12, 8, 17) == 38
 
 
 
