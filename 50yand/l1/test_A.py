@@ -4,9 +4,11 @@ import random
 
 
 def test_partition():
-    assert t.partition(3, [1,9,4,2,3],3) == (2, 3)
-    assert t.partition(0, [], 0) == (0,0)
-    assert t.partition(1,[0], 0) == (0, 1)
+    assert t.Solution(0, 7, 12, 5) == 25
+    assert t.Solution(1, 7, 12, 5) == 24
+    assert t.Solution(-1, 7, 12, 5) == 26
+    assert t.Solution(-1, 1, 1, 1) == 5
+    assert t.Solution(12, 7, 0, 5) == 25
 
 
 pytest.main()
