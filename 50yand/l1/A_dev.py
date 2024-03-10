@@ -1,18 +1,36 @@
 def Solution(P, V, Q, M):
     result = 0
-    range = P - Q
-    if range < 0:
-        range *= -1
+    if P == Q:
+        return max(M, V) * 2 + 1
 
-    if range == 0:
-        result += max(V, M) * 2 + 1
-    elif range > V + M:
-        result += V * 2 + 1
-        result += M * 2 + 1
-    elif range <= V + M:
-        result += V * 2 + 1
-        result += M * 2 + 1
-        result -= 1 - (range - V - M)
+
+    if P > Q:
+        tmpQ, tmpM = Q, M
+        Q, M = P, V
+        P, V = tmpQ, tmpM
+
+    Left_P = P - V
+    Right_P = P + V
+    Left_Q = Q - M
+    Right_Q = Q + M
+    print(P, V, Q, M)
+    print(Left_P, Right_P, Left_Q, Right_Q)
+    result += Right_P - Left_P + 1
+    print(result)
+
+    if Left_Q < Left_P and Right_Q > Right_P:
+        return Right_Q - Left_Q + 1
+
+    if Left_P < Left_Q and Right_P > Right_Q:
+        return Right_P - Left_P + 1
+
+    if Right_P == Left_Q:
+        result += Right_Q - Left_Q
+    elif Right_P < Left_Q:
+        result += Right_Q - Left_Q + 1
+    elif Right_P < Q:
+        result += Right_Q - Right_P
+
 
     return result
 
