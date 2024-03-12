@@ -1,6 +1,7 @@
 def Solution(match_prev, match, home):
     total_score = (match_prev[0] + match[0], match_prev[1] + match[1])
     need = total_score[1] - total_score[0]
+    print(need)
     if need < 0:
         return 0
     if need == 0:
@@ -17,7 +18,7 @@ def Solution(match_prev, match, home):
 
     if home == 2:
         #2я игра дома
-        if match_prev[0] >= match[1] + need:
+        if match_prev[0] >= match[1]:
             return need
         else:
             return need + 1
