@@ -1,12 +1,14 @@
 def Solution(match_prev, match, home):
     total_score = (match_prev[0] + match[0], match_prev[1] + match[1])
     need = total_score[1] - total_score[0]
-    if sum(total_score) == 0:
-        return 1
-    if home != 1:
-        return need + 1
+    if home == 1:
+        #Первая дома им нужно больше голов сейчас
+        if match_prev[0] == match_prev[1]:
+            return need + 1
+        else:
+            return need
     else:
-        return need
+        return need + 1
 
 
 
