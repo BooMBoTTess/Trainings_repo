@@ -22,7 +22,7 @@ def Solution(match_prev, match, home):
         else:
             return need + 1
     else:
-        if match_prev[1] >= need:
+        if match_prev[1] >= match[0] + need:
             return need + 1
         return need
 
