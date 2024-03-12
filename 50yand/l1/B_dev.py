@@ -17,7 +17,7 @@ def Solution(match_prev, match, home):
 
     if home == 2:
         #2я игра дома
-        if match_prev[0] >= match[1]:
+        if match_prev[0] >= match[1] + need:
             return need
         else:
             return need + 1
