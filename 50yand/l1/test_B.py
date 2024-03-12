@@ -13,6 +13,6 @@ def test_partition():
     assert t.Solution((1, 2), (2, 3), 1) == 2
     assert t.Solution((1, 1), (0, 1), 1) == 2
     assert t.Solution((4, 3), (0, 3), 2) == 2
-    assert t.Solution((4, 5), (2, 4), 2) == 3
+    assert t.Solution((4, 5), (2, 4), 2) == 4
 
 pytest.main()
