@@ -1,7 +1,7 @@
 import sys
 
 def str_to_dict(s):
-    s_ans = ''
+    s_ans = []
     l_l = s[0]
     letters = ''
     n = 0
@@ -9,26 +9,30 @@ def str_to_dict(s):
         if l == l_l:
             n += 1
         else:
-            s_ans += l_l + str(n)
+            s_ans.append(n)
             letters += l_l
             l_l = l
             n = 1
-    s_ans += l_l + str(n)
+    s_ans.append(n)
     letters += l_l
 
 
     return s_ans, letters
 
+def count_letter(A,B,C) -> int:
+    arr = [A,B,C]
+    arr.sort()
+    return arr[1]
+
 def main(A : str, B : str, C : str):
-    A, A_l = str_to_dict(A)
-    B, B_l = str_to_dict(B)
-    C, C_l = str_to_dict(C)
-    if not(A_l == B_l and B_l == C_l):
+    NA, LA = str_to_dict(A)
+    NB, LB = str_to_dict(B)
+    NC, LC = str_to_dict(C)
+    if not(LA == LB and LB == LC):
         return 'IMPOSSIBLE'
     ans = ''
-    for i in range(0, len(A), 2):
-        mean = int(round((int(A[i+1]) + int(B[i+1]) + int(C[i+1])) / 3, 0))
-        ans += A[i] * mean
+    for i in range(0, len(LA)):
+        ans += LA[i] * count_letter(NA[i], NB[i], NC[i])
     return ans
 
 
