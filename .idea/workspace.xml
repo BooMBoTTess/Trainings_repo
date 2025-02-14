@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="leetcode 872 DONE">
-      <change afterPath="$PROJECT_DIR$/leetcode/t872.py" afterDir="false" />
+    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="leetcode">
+      <change afterPath="$PROJECT_DIR$/leetcode/t2574.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for t15.test_program.executor": "Run",
+    "Python tests.Python tests for t2574.test_program.executor": "Run",
+    "Python tests.Python tests for t3248.test_program.executor": "Run",
     "Python tests.Python tests for t455.test_program.executor": "Run",
     "Python tests.Python tests for t872.test_program.executor": "Run",
     "Python tests.Python tests in t2586.py.executor": "Run",
@@ -75,30 +77,23 @@
       <recent name="C:\Users\amalyj\PycharmProjects\Trainings_repo\coderun" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for t872.test_program">
-    <configuration name="t2586" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for t2574.test_program">
+    <configuration name="Python tests for t2574.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\amalyj\PycharmProjects\Trainings_repo\leetcode\t2586.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;t2574.test_program&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for leetcode.t2586.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for t3248.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,8 +103,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
-      <option name="_new_target" value="&quot;leetcode.t2586.test_program&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;t3248.test_program&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -159,19 +154,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.t2586" />
+      <item itemvalue="Python tests.Python tests for t2574.test_program" />
+      <item itemvalue="Python tests.Python tests for t3248.test_program" />
       <item itemvalue="Python tests.Python tests for t872.test_program" />
       <item itemvalue="Python tests.Python tests in t680.py" />
-      <item itemvalue="Python tests.Python tests for leetcode.t2586.test_program" />
       <item itemvalue="Python tests.Python tests for t455.test_program" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for t2574.test_program" />
+        <item itemvalue="Python tests.Python tests for t3248.test_program" />
         <item itemvalue="Python tests.Python tests for t872.test_program" />
         <item itemvalue="Python tests.Python tests in t680.py" />
         <item itemvalue="Python tests.Python tests for t455.test_program" />
-        <item itemvalue="Python tests.Python tests for leetcode.t2586.test_program" />
-        <item itemvalue="Python.t2586" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739523319267</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="leetcode 872 DONE">
+      <option name="closed" value="true" />
+      <created>1739531082650</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739531082650</updated>
+    </task>
+    <task id="LOCAL-00006" summary="leetcode">
+      <option name="closed" value="true" />
+      <created>1739531195172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739531195172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +253,8 @@
     <MESSAGE value="t2586.py DONE" />
     <MESSAGE value="leetcode 455 maybe wrong test" />
     <MESSAGE value="leetcode 872 DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode 872 DONE" />
+    <MESSAGE value="leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
