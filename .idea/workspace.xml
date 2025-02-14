@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="t2586.py DONE">
-      <change afterPath="$PROJECT_DIR$/leetcode/t455.py" afterDir="false" />
+    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="leetcode 872 DONE">
+      <change afterPath="$PROJECT_DIR$/leetcode/t872.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,24 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for t15.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for t455.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in t2586.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_2401_m.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for t15.test_program.executor": "Run",
+    "Python tests.Python tests for t455.test_program.executor": "Run",
+    "Python tests.Python tests for t872.test_program.executor": "Run",
+    "Python tests.Python tests in t2586.py.executor": "Run",
+    "Python tests.Python tests in t680.py.executor": "Run",
+    "Python.t15.executor": "Run",
+    "Python.task_2401_m.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\amalyj\PycharmProjects\Trainings_repo\coderun" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for t455.test_program">
+  <component name="RunManager" selected="Python tests.Python tests for t872.test_program">
     <configuration name="t2586" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
@@ -88,50 +90,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\amalyj\PycharmProjects\Trainings_repo\leetcode\t2586.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="task_2401_m" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Trainings_repo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/task_2401_m.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="task_2433_m" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Trainings_repo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/task_2433_m.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,20 +128,50 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for t872.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Trainings_repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;t872.test_program&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in t680.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Trainings_repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/leetcode/t680.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.t2586" />
-      <item itemvalue="Python.task_2401_m" />
-      <item itemvalue="Python.task_2433_m" />
+      <item itemvalue="Python tests.Python tests for t872.test_program" />
+      <item itemvalue="Python tests.Python tests in t680.py" />
       <item itemvalue="Python tests.Python tests for leetcode.t2586.test_program" />
       <item itemvalue="Python tests.Python tests for t455.test_program" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for t872.test_program" />
+        <item itemvalue="Python tests.Python tests in t680.py" />
         <item itemvalue="Python tests.Python tests for t455.test_program" />
         <item itemvalue="Python tests.Python tests for leetcode.t2586.test_program" />
         <item itemvalue="Python.t2586" />
-        <item itemvalue="Python.task_2401_m" />
-        <item itemvalue="Python.task_2433_m" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +207,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739451813893</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="leetcode 455 maybe wrong test">
+      <option name="closed" value="true" />
+      <created>1739521503753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739521503753</updated>
+    </task>
+    <task id="LOCAL-00004" summary="leetcode 872 DONE">
+      <option name="closed" value="true" />
+      <created>1739523319267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739523319267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +240,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done" />
     <MESSAGE value="t2586.py DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="t2586.py DONE" />
+    <MESSAGE value="leetcode 455 maybe wrong test" />
+    <MESSAGE value="leetcode 872 DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode 872 DONE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
