@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="codewars" />
+    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="codewars">
+      <change afterPath="$PROJECT_DIR$/codewars/parseInt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,29 +56,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for t15.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for t2574.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for t3248.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for t455.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for t872.test_program.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in t2586.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in t680.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Convert PascalCase.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_2401_m.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for t15.test_program.executor": "Run",
+    "Python tests.Python tests for t2574.test_program.executor": "Run",
+    "Python tests.Python tests for t3248.test_program.executor": "Run",
+    "Python tests.Python tests for t455.test_program.executor": "Run",
+    "Python tests.Python tests for t872.test_program.executor": "Run",
+    "Python tests.Python tests in t2586.py.executor": "Run",
+    "Python tests.Python tests in t680.py.executor": "Run",
+    "Python.Convert PascalCase.executor": "Run",
+    "Python.greed_is_good.executor": "Run",
+    "Python.multitapkeypad.executor": "Run",
+    "Python.parseInt.executor": "Run",
+    "Python.t15.executor": "Run",
+    "Python.task_2401_m.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\amalyj\PycharmProjects\Trainings_repo\coderun" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.greed_is_good">
+  <component name="RunManager" selected="Python.parseInt">
     <configuration name="Convert PascalCase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
@@ -120,6 +126,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="multitapkeypad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Trainings_repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codewars" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codewars/multitapkeypad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parseInt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Trainings_repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codewars" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codewars/parseInt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for t2574.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
@@ -135,50 +185,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for t3248.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Trainings_repo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;t3248.test_program&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for t872.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Trainings_repo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;t872.test_program&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.greed_is_good" />
+      <item itemvalue="Python.multitapkeypad" />
+      <item itemvalue="Python.parseInt" />
       <item itemvalue="Python.Convert PascalCase" />
       <item itemvalue="Python tests.Python tests for t2574.test_program" />
-      <item itemvalue="Python tests.Python tests for t3248.test_program" />
-      <item itemvalue="Python tests.Python tests for t872.test_program" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.parseInt" />
+        <item itemvalue="Python.multitapkeypad" />
         <item itemvalue="Python.greed_is_good" />
         <item itemvalue="Python.Convert PascalCase" />
         <item itemvalue="Python tests.Python tests for t2574.test_program" />
-        <item itemvalue="Python tests.Python tests for t3248.test_program" />
-        <item itemvalue="Python tests.Python tests for t872.test_program" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741245461786</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="codewars">
+      <option name="closed" value="true" />
+      <created>1741612640613</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741612640613</updated>
+    </task>
+    <task id="LOCAL-00009" summary="codewars">
+      <option name="closed" value="true" />
+      <created>1741613964499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741613964499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,6 +385,11 @@
           <url>file://$PROJECT_DIR$/leetcode/task_2401_m.py</url>
           <line>22</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codewars/parseInt.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
