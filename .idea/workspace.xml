@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="codewars">
-      <change afterPath="$PROJECT_DIR$/codewars/parseInt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/proper_fractions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +69,7 @@
     "Python.greed_is_good.executor": "Run",
     "Python.multitapkeypad.executor": "Run",
     "Python.parseInt.executor": "Run",
+    "Python.proper_fractions.executor": "Run",
     "Python.t15.executor": "Run",
     "Python.task_2401_m.executor": "Run",
     "RunOnceActivity.git.unshallow": "true",
@@ -81,7 +82,7 @@
       <recent name="C:\Users\amalyj\PycharmProjects\Trainings_repo\coderun" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.parseInt">
+  <component name="RunManager" selected="Python.proper_fractions">
     <configuration name="Convert PascalCase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
@@ -170,35 +171,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for t2574.test_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="proper_fractions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codewars" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;t2574.test_program&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codewars/proper_fractions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.proper_fractions" />
       <item itemvalue="Python.greed_is_good" />
       <item itemvalue="Python.multitapkeypad" />
       <item itemvalue="Python.parseInt" />
       <item itemvalue="Python.Convert PascalCase" />
-      <item itemvalue="Python tests.Python tests for t2574.test_program" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.proper_fractions" />
         <item itemvalue="Python.parseInt" />
         <item itemvalue="Python.multitapkeypad" />
         <item itemvalue="Python.greed_is_good" />
         <item itemvalue="Python.Convert PascalCase" />
-        <item itemvalue="Python tests.Python tests for t2574.test_program" />
       </list>
     </recent_temporary>
   </component>
