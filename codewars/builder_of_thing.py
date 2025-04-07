@@ -1,9 +1,14 @@
+import types
+from functools import wraps
+
+
 class Thing():
     def __init__(self, name):
         self.name = name
         self.verbs = {'is_a': IsA, 'is_not_a': IsNotA, 'is_the': IsThe,
                       'and_the': IsThe, 'being_the': IsThe, 'has': Has, 'having': Has,
                       'can': Can}
+        self.archieve = {}
         print(self.__class__, 'init', name, self.name)
 
     def __getattr__(self, item):
@@ -12,13 +17,10 @@ class Thing():
             return self.verbs[item](self)
         elif item == f'is_{self.name}':
             return True
-        return '123'
+        return self.archieve[item]
 
     def __setattr__(self, key, value):
         print(self.__class__, 'setattr', key, value)
-        if key == 'name':
-            if value[-1] == 's':
-                value = value[:-1]
         super().__setattr__(key, value)
         return value
 
@@ -116,8 +118,13 @@ class Hasing:
         if self.num == 1:
             t = Thing(item)
         else:
-            t = ThingTuple([Thing(item) for _ in range(self.num)])
+            solo_item = item[:-1]
+            t = ThingTuple([Thing(solo_item) for _ in range(self.num)])
             setattr(t, 'name', item)
+
+
+
+
         setattr(self.who, item, t)
         return t
 
@@ -139,9 +146,25 @@ class Verb:
         print(self.__class__, 'getattr', item)
         return self.who
 
-    def __call__(self, method, archive_name):
+    def __call__(self, method, archive_name=None):
+        def decorator(func, archive_name=None):
+            @wraps(func)
+            def wrapper(*args, **kwargs):
+                # код до оригинальной функции
+                print(archive_name)
+
+                print('i am wrapper')
+                r = func(*args, **kwargs)
+                self.who.archieve[archive_name].append(r)
+                # код после оригинальной функции
+                return r
+            print('i am decorator')
+            self.who.archieve[archive_name] = []
+            return wrapper
+
+        decorated_func = decorator(method, archive_name)
         print(self.__class__, 'call', method, archive_name)
-        setattr(self.who, self.what, method)
+        setattr(self.who, self.what, types.MethodType(decorated_func, self.who))
         return self.who
 
 if __name__ == '__main__':
@@ -206,8 +229,10 @@ if __name__ == '__main__':
 
     jane.can.speak(method, "spoke")
 
-    jane.speak("hello")  # => "Jane says: hello"
-    jane.speak("bye")  # => "Jane says: bye"
+    print(jane.speak("hello"))  # => "Jane says: hello"
+    print(jane.speak("bye"))  # => "Jane says: bye"
+    print(jane.spoke)
+
 
     # print('-'*50)
     # legs = jane.has(2).legs

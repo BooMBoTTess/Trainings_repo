@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="codewars timelimit">
-      <change afterPath="$PROJECT_DIR$/codewars/twice linear.py" afterDir="false" />
+    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="builder of thing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codewars/builder_of_thing.py" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/builder_of_thing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
     &quot;Python tests.Python tests in t2586.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in t680.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.Convert PascalCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python.builder_of_thing.executor&quot;: &quot;Run&quot;,
     &quot;Python.greed_is_good.executor&quot;: &quot;Run&quot;,
     &quot;Python.multitapkeypad.executor&quot;: &quot;Run&quot;,
     &quot;Python.parseInt.executor&quot;: &quot;Run&quot;,
@@ -196,10 +197,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.builder_of_thing" />
-      <item itemvalue="Python.twice linear" />
-      <item itemvalue="Python.proper_fractions" />
       <item itemvalue="Python.multitapkeypad" />
       <item itemvalue="Python.parseInt" />
+      <item itemvalue="Python.proper_fractions" />
+      <item itemvalue="Python.twice linear" />
     </list>
     <recent_temporary>
       <list>
@@ -307,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741683374562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="builder of thing">
+      <option name="closed" value="true" />
+      <created>1742221718306</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742221718306</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +338,8 @@
     <MESSAGE value="leetcode" />
     <MESSAGE value="codewars" />
     <MESSAGE value="codewars timelimit" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars timelimit" />
+    <MESSAGE value="builder of thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="builder of thing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
