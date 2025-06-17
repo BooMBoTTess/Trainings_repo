@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="gas station спизжжено">
-      <change afterPath="$PROJECT_DIR$/leetcode/1567 max length.py" afterDir="false" />
+    <list default="true" id="c33af7b8-e9ca-451d-9e97-4e455878ee59" name="Changes" comment="Большая длина">
+      <change afterPath="$PROJECT_DIR$/leetcode/m8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +70,7 @@
     &quot;Python.Convert PascalCase.executor&quot;: &quot;Run&quot;,
     &quot;Python.builder_of_thing.executor&quot;: &quot;Run&quot;,
     &quot;Python.greed_is_good.executor&quot;: &quot;Run&quot;,
+    &quot;Python.m8.executor&quot;: &quot;Run&quot;,
     &quot;Python.multitapkeypad.executor&quot;: &quot;Run&quot;,
     &quot;Python.parseInt.executor&quot;: &quot;Run&quot;,
     &quot;Python.proper_fractions.executor&quot;: &quot;Run&quot;,
@@ -89,7 +90,7 @@
       <recent name="C:\Users\amalyj\PycharmProjects\Trainings_repo\coderun" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.1567 max length">
+  <component name="RunManager" selected="Python.m8">
     <configuration name="134 gas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
@@ -156,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proper_fractions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="m8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Trainings_repo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,11 +166,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codewars" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codewars/proper_fractions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/m8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,19 +202,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1567 max length" />
       <item itemvalue="Python.134 gas" />
+      <item itemvalue="Python.1567 max length" />
       <item itemvalue="Python.builder_of_thing" />
-      <item itemvalue="Python.proper_fractions" />
+      <item itemvalue="Python.m8" />
       <item itemvalue="Python.twice linear" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.m8" />
         <item itemvalue="Python.1567 max length" />
         <item itemvalue="Python.134 gas" />
         <item itemvalue="Python.builder_of_thing" />
         <item itemvalue="Python.twice linear" />
-        <item itemvalue="Python.proper_fractions" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749108872733</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Большая длина">
+      <option name="closed" value="true" />
+      <created>1749209594468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749209594468</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +362,8 @@
     <MESSAGE value="codewars timelimit" />
     <MESSAGE value="builder of thing" />
     <MESSAGE value="gas station спизжжено" />
-    <option name="LAST_COMMIT_MESSAGE" value="gas station спизжжено" />
+    <MESSAGE value="Большая длина" />
+    <option name="LAST_COMMIT_MESSAGE" value="Большая длина" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
